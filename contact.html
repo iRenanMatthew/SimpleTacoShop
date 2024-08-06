@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Renan Matthew" />
+    <meta name="description" content="One stop tacoshop in Philippines" />
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://play-lh.googleusercontent.com/SJlzNk06SreyBxRBLCQ5qKdQuNAV99M-cD5YenyTrrl4co2_7SIOwbLFDpYdvOsyWrc"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Contact | The Little Taco Shop</title>
+    <script src="./main.js" defer></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <h1 class="header__h1">Little Taco Shop</h1>
+      <nav class="header__nav">
+        <ul class="header__ul">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./index.html#menu">Menu</a></li>
+          <li><a href="hours.html">Hours</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <figure>
+        <img
+          src="https://img.taste.com.au/Z2m_6zIt/taste/2016/11/beef-tacos-98153-1.jpeg"
+          alt="Taco Shop.jpg"
+          title="Taco yummy!"
+          width="1000"
+          height="667"
+        />
+        <figcaption class="offscreen">
+          Tacos and our special salsa sauce
+        </figcaption>
+      </figure>
+    </section>
+
+    <main class="main">
+      <article class="main__article">
+        <h2>Our Location</h2>
+        <address>
+          555 Taco Temptation Lane, Suite T
+          <br />
+          Kansas City, MO 55555-5555
+
+          <p>Phone: <a href="tel:555-555-5555">555-555-5555</a></p>
+        </address>
+      </article>
+
+      <hr />
+
+      <article class="main__article contact">
+        <h2 class="contact__h2">Our Contact Form</h2>
+        <form
+          action="https://httpbin.org/post"
+          method="post"
+          class="contact__form"
+        >
+          <fieldset class="contact__fieldset">
+            <legend class="offscreen">Send Us A Message</legend>
+            <p class="contact__p">
+              <label class="contact__label" for="yourName">Name:</label>
+              <input
+                class="contact__input"
+                type="text"
+                name="yourName"
+                id="yourName"
+                placeholder="your name"
+                required
+                autofocus
+              />
+            </p>
+            <p class="contact__p">
+              <label class="contact__label" for="yourEmail">Email:</label>
+              <input
+                class="contact__input"
+                type="email"
+                name="yourEmail"
+                id="yourEmail"
+                placeholder="your name"
+                required
+              />
+            </p>
+            <p class="contact__p">
+              <label class="contact__label" for="yourMsg">Your Message:</label>
+              <br />
+              <textarea
+                class="contact__textarea"
+                name="yourMsg"
+                id="yourMsg"
+                cols="30"
+                rows="10"
+                placeholder="Type your message here"
+                required
+              ></textarea>
+            </p>
+          </fieldset>
+          <button
+            class="contact__button"
+            type="submit"
+            formaction="https://httpbin.org/post"
+            formmethod="post"
+          >
+            Submit
+          </button>
+          <button class="contact__button" type="reset">Reset</button>
+        </form>
+      </article>
+
+      <a href="#">Back to Top</a>
+    </main>
+
+    <footer class="footer">
+      <p>
+        <span class="nowrap">Copyright &copy; <time id="year"></time></span>
+        <span class="nowrap">The Little Taco Shop</span>
+      </p>
+    </footer>
+  </body>
+</html>
